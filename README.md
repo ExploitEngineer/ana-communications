@@ -1,6 +1,6 @@
-# Ana Communications UI - Next.js Project
+# Ana Communications - Next.js Project
 
-**Repository Name:** `ana-communications-ui`
+**Repository Name:** `ana-communications`
 
 ---
 
