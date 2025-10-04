@@ -64,8 +64,6 @@ To run the project locally:
 
 4. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-> Note: If you implement the contact form with Nodemailer, make sure to set environment variables for email credentials.
-
 ---
 
 ## Contribution
