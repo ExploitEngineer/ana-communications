@@ -47,7 +47,7 @@ To run the project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ExploitEngineer/ana-communications-ui.git
+   git clone https://github.com/ExploitEngineer/ana-communications.git
    ```
 
 2. Install dependencies:
