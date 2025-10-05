@@ -1,13 +1,12 @@
-import React from "react";
 import Link from "next/link";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { TextEffect } from "@/components/ui/text-effect";
 import { AnimatedGroup } from "@/components/ui/animated-group";
-import { HeroHeader } from "./header";
+import { Variants } from "motion/react";
 
-const transitionVariants = {
+const transitionVariants: { item: Variants } = {
   item: {
     hidden: {
       opacity: 0,
@@ -30,7 +29,6 @@ const transitionVariants = {
 export default function HeroSection() {
   return (
     <>
-      <HeroHeader />
       <main className="overflow-hidden">
         <div
           aria-hidden
@@ -85,7 +83,20 @@ export default function HeroSection() {
 
             <div className="mx-auto max-w-7xl px-6">
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
-                <AnimatedGroup variants={transitionVariants}>
+                <AnimatedGroup
+                  variants={{
+                    container: {
+                      hidden: {},
+                      visible: {
+                        transition: {
+                          staggerChildren: 0.05,
+                          delayChildren: 0.75,
+                        },
+                      },
+                    },
+                    item: transitionVariants.item,
+                  }}
+                >
                   <Link
                     href="#link"
                     className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
