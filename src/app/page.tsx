@@ -1,6 +1,6 @@
 import HeroSection from "@/components/hero-section";
 import AboutSection from "@/components/about";
-import Features from "@/components/features";
+import Services from "@/components/services";
 import TeamSection from "@/components/team";
 import Testimonials from "@/components/testimonials";
 
@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutSection />
-      <Features />
+      <Services />
       <Testimonials />
       <TeamSection />
     </>
