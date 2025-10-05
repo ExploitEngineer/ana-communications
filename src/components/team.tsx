@@ -1,31 +1,26 @@
-"use client";
-
-import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const members = [
-  {
-    name: "Altaf Hussain",
-    role: "Chief Executive",
-    avatar: "/assets/images/person-1.jpeg",
-    link: "#",
-  },
   {
     name: "Arif Hussain Bhagash",
     role: "Chief Executive Officer (CEO)",
     avatar: "/assets/images/person-2.jpeg",
-    link: "#",
+  },
+  {
+    name: "Altaf Hussain",
+    role: "Chief Executive",
+    avatar: "/assets/images/person-1.jpeg",
   },
   {
     name: "Ubaid Sohail",
     role: "Floor Manager",
     avatar: "/assets/images/person-3.jpeg",
-    link: "#",
   },
 ];
 
 export default function TeamSection() {
   return (
-    <section className="py-24 md:py-32 bg-background text-foreground">
+    <section id="team" className="py-24 md:py-32 bg-background text-foreground">
       <div className="mx-auto max-w-6xl px-6">
         {/* Section Heading */}
         <div className="text-center mb-12">
@@ -45,7 +40,10 @@ export default function TeamSection() {
             {members.map((member, index) => (
               <div
                 key={index}
-                className="group cursor-pointer overflow-hidden transition-all"
+                className={cn(
+                  "group cursor-pointer overflow-hidden transition-all duration-500 relative",
+                  index === 1 && "lg:-translate-y-10 z-10",
+                )}
               >
                 <img
                   className="h-96 w-full rounded-md object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl"
@@ -67,12 +65,6 @@ export default function TeamSection() {
                     <span className="text-muted-foreground inline-block translate-y-6 text-sm opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                       {member.role}
                     </span>
-                    <Link
-                      href={member.link}
-                      className="group-hover:text-primary inline-block translate-y-8 text-sm tracking-wide opacity-0 transition-all duration-500 hover:underline group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      Linktree
-                    </Link>
                   </div>
                 </div>
               </div>

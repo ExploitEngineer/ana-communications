@@ -2,19 +2,17 @@ import { Logo } from "@/components/logo";
 import Link from "next/link";
 
 const links = [
-  { title: "Features", href: "#" },
-  { title: "Solutions", href: "#" },
-  { title: "Customers", href: "#" },
-  { title: "Pricing", href: "#" },
-  { title: "Help", href: "#" },
-  { title: "About", href: "#" },
+  { title: "Home", href: "#home" },
+  { title: "About", href: "#about" },
+  { title: "Services", href: "#services" },
+  { title: "Clients", href: "#clients" },
+  { title: "Team", href: "#team" },
 ];
 
 export default function FooterSection() {
   return (
-    <footer className="relative border-t border-border bg-background py-16 md:py-24">
-      {/* Gradient Divider (optional but adds a soft finish between sections) */}
-      <div className="absolute -top-[1px] left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
+    <footer className="relative border-t border-border bg-background py-16 ">
+      <div className="absolute -top-[1px] left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
       <div className="mx-auto max-w-5xl px-6 text-center">
         {/* Logo */}
@@ -23,7 +21,7 @@ export default function FooterSection() {
         </Link>
 
         {/* Navigation Links */}
-        <div className="my-10 flex flex-wrap justify-center gap-6 text-sm">
+        <div className="my-6 flex flex-wrap justify-center gap-6 text-sm">
           {links.map((link, index) => (
             <Link
               key={index}
@@ -36,7 +34,7 @@ export default function FooterSection() {
         </div>
 
         {/* Social Icons */}
-        <div className="mb-10 flex flex-wrap justify-center gap-6 text-sm">
+        <div className="mb-6 flex flex-wrap justify-center gap-6 text-sm">
           {socialLinks.map((icon, index) => (
             <Link
               key={index}
@@ -79,7 +77,7 @@ const socialLinks = [
   },
   {
     label: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/ana-communication-b97a89385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     svg: (
       <svg
         className="size-6"

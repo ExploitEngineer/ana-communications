@@ -5,7 +5,10 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="py-24 md:py-32 bg-background text-foreground">
+    <section
+      id="about"
+      className="py-24 md:py-32 bg-background text-foreground"
+    >
       <div className="mx-auto max-w-6xl px-6">
         {/* Heading */}
         <div className="mb-12 text-center">
@@ -21,7 +24,6 @@ export default function AboutSection() {
 
         {/* Content Grid */}
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-          {/* Left - Text */}
           <div className="space-y-8">
             <p className="text-muted-foreground text-base leading-relaxed">
               At{" "}
@@ -66,14 +68,7 @@ export default function AboutSection() {
                 alt="Ana Communications Team"
                 width={1206}
                 height={612}
-                className="hidden dark:block rounded-2xl object-cover"
-              />
-              <Image
-                src="/exercice.png"
-                alt="Ana Communications Team"
-                width={1206}
-                height={612}
-                className="block dark:hidden rounded-2xl object-cover"
+                className="rounded-2xl object-cover"
               />
             </div>
           </div>
@@ -83,7 +78,6 @@ export default function AboutSection() {
   );
 }
 
-/* --- Small Reusable Feature Item Component --- */
 function FeatureItem({
   icon,
   title,

@@ -10,7 +10,7 @@ import {
   Globe,
 } from "lucide-react";
 
-export default function Features() {
+export default function Services() {
   const features = [
     {
       title: "Inbound & Outbound Support",
@@ -51,7 +51,10 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-background text-foreground">
+    <section
+      id="features"
+      className="py-24 md:py-32 bg-background text-foreground"
+    >
       <div className="mx-auto max-w-6xl px-6 text-center">
         {/* Section Heading */}
         <div className="inline-block mb-12">
@@ -65,7 +68,7 @@ export default function Features() {
           </p>
         </div>
 
-        {/* Features Grid */}
+        {/* Services Grid */}
         <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <Card
