@@ -4,13 +4,13 @@ import Link from "next/link";
 
 const members = [
   {
-    name: "Omar Khan",
+    name: "Altaf Hussain",
     role: "Chief Executive",
     avatar: "/assets/images/person-1.jpeg",
     link: "#",
   },
   {
-    name: "Aftab",
+    name: "Arif Hussain Bhagash",
     role: "Chief Executive Officer (CEO)",
     avatar: "/assets/images/person-2.jpeg",
     link: "#",

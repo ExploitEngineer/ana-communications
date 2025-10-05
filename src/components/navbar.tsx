@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { useScroll } from "motion/react";
@@ -18,7 +17,7 @@ const menuItems = [
   { name: "Contact", href: "/contact" },
 ];
 
-export const HeroHeader = () => {
+export const Navbar = () => {
   const [menuState, setMenuState] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
 
@@ -66,7 +65,9 @@ export const HeroHeader = () => {
 
           {/* Theme toggle right */}
           <div className="flex items-center">
-            <ModeToggle />
+            <div className="lg:block hidden">
+              <ModeToggle />
+            </div>
 
             {/* Mobile menu button */}
             <button
