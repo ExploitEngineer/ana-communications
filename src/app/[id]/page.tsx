@@ -18,5 +18,9 @@ export default function Pages({ params }: { params: { id: string } }) {
   if (!SelectedSection) {
     notFound();
   }
-  return <SelectedSection />;
+  return (
+    <div className="w-full min-h-screen">
+      <SelectedSection />
+    </div>
+  );
 }
