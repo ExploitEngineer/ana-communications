@@ -168,8 +168,6 @@ export function ContactForm() {
           </Form>
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
     </section>
   );
 }

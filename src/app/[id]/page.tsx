@@ -19,7 +19,7 @@ export default function Pages({ params }: { params: { id: string } }) {
     notFound();
   }
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen flex items-center justify-center">
       <SelectedSection />
     </div>
   );
