@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { Logo } from "@/components/logo";
 import { Menu, X } from "lucide-react";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { useScroll } from "motion/react";
 import { ModeToggle } from "./mode-toggle";
+import { Logo } from "./logo";
 
 const menuItems = [
   { name: "Home", href: "/" },
@@ -41,9 +41,7 @@ export const Navbar = () => {
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
           {/* Logo left */}
           <div className="flex items-center">
-            <Link href="/" aria-label="home" className="flex items-center">
-              <Logo />
-            </Link>
+            <Logo />
           </div>
 
           {/* Links center */}
