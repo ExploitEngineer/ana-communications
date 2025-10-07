@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 const members = [
   {
-    name: "Arif Hussain Bhagash",
+    name: "Aftab Nabi Bangash",
     role: "Chief Executive Officer (CEO)",
     avatar: "/assets/images/person-2.jpeg",
   },
@@ -57,9 +57,6 @@ export default function TeamSection() {
                     <h3 className="text-base font-medium transition-all duration-500 group-hover:tracking-wider">
                       {member.name}
                     </h3>
-                    <span className="text-xs text-muted-foreground">
-                      _0{index + 1}
-                    </span>
                   </div>
                   <div className="mt-1 flex items-center justify-between">
                     <span className="text-muted-foreground inline-block translate-y-6 text-sm opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100">
