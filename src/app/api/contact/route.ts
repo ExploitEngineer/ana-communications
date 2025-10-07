@@ -5,21 +5,19 @@ export async function POST(req: NextRequest) {
   try {
     const { name, email, subject, message } = await req.json();
 
-    // Configure transporter
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST, // e.g., smtp.gmail.com
+      host: process.env.SMTP_HOST,
       port: Number(process.env.SMTP_PORT) || 587,
-      secure: false, // true for 465, false for other ports
+      secure: false,
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
     });
 
-    // Send the email
     await transporter.sendMail({
-      from: `"${name}" <${email}>`, // sender address
-      to: process.env.CONTACT_TO_EMAIL, // your email
+      from: `"${name}" <${email}>`,
+      to: process.env.CONTACT_TO_EMAIL,
       subject: subject,
       text: message,
       html: `<p>${message}</p><p>From: ${name} (${email})</p>`,
