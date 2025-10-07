@@ -14,9 +14,12 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import toast from "react-hot-toast";
+import { Loader2 } from "lucide-react";
 
 export function ContactForm() {
+  const [isSending, setIsSending] = useState<boolean>(false);
   const form = useForm<FormSchemaValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -28,6 +31,7 @@ export function ContactForm() {
   });
 
   const onSubmit = async (data: FormSchemaValues) => {
+    setIsSending(true);
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -46,6 +50,8 @@ export function ContactForm() {
     } catch (err) {
       toast.error("An unexpected error occurred.");
       console.error(err);
+    } finally {
+      setIsSending(false);
     }
   };
 
@@ -159,9 +165,14 @@ export function ContactForm() {
               <div className="text-center pt-4">
                 <Button
                   type="submit"
+                  disabled={isSending}
                   className="px-8 cursor-pointer py-2 text-base font-medium rounded-lg transition-all duration-300 hover:scale-[1.02]"
                 >
-                  Send Message
+                  {isSending ? (
+                    <Loader2 className="animate-spin" />
+                  ) : (
+                    "Send Message"
+                  )}
                 </Button>
               </div>
             </form>
