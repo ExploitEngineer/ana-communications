@@ -2,12 +2,12 @@ import { cn } from "@/lib/utils";
 
 const members = [
   {
-    name: "Aftab Nabi Bangash",
+    name: "Arif Hussain Bangash",
     role: "Chief Executive Officer (CEO)",
     avatar: "/assets/images/person-2.jpeg",
   },
   {
-    name: "Altaf Hussain",
+    name: "Aftab Nabi Bangash",
     role: "Chief Executive",
     avatar: "/assets/images/person-1.jpeg",
   },
