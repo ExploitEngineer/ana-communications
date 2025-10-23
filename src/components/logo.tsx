@@ -39,7 +39,7 @@ export function Logo() {
       >
         <span
           className={cn(
-            "bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 bg-clip-text text-transparent font-extrabold transition-all duration-500 group-hover:opacity-90",
+            "bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 bg-clip-text text-3xl text-transparent font-extrabold transition-all duration-500 group-hover:opacity-90",
           )}
         >
           ANA

@@ -39,11 +39,6 @@ export const Navbar = () => {
         )}
       >
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-          {/* Logo left */}
-          <div className="flex items-center">
-            <Logo />
-          </div>
-
           {/* Links center */}
           <div className="hidden lg:flex flex-1 justify-center">
             <ul className="flex gap-8 text-sm">
