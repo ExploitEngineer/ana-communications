@@ -42,9 +42,8 @@ export function Logo() {
             "bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 bg-clip-text text-transparent font-extrabold transition-all duration-500 group-hover:opacity-90",
           )}
         >
-          A
+          ANA
         </span>
-        <span className="ml-[1px] font-semibold">na</span>
 
         <span
           className={cn(
