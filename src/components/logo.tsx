@@ -39,7 +39,7 @@ export function Logo() {
       >
         <span
           className={cn(
-            "bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 bg-clip-text text-3xl text-transparent font-extrabold transition-all duration-500 group-hover:opacity-90",
+            "bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 bg-clip-text md:text-5xl text-3xl text-transparent font-extrabold transition-all duration-500 group-hover:opacity-90",
           )}
         >
           ANA
@@ -47,10 +47,10 @@ export function Logo() {
 
         <span
           className={cn(
-            "ml-2 text-[0.9rem] font-medium tracking-widest text-muted-foreground transition-all duration-500 group-hover:text-blue-600",
+            "ml-2 md:text-[0.99rem] text-[0.9rem] font-medium tracking-widest text-muted-foreground transition-all duration-500 group-hover:text-blue-600",
           )}
         >
-          Communications
+          Communication
         </span>
       </h1>
 
