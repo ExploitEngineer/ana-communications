@@ -96,7 +96,7 @@ export default function FooterSection() {
         <p className="text-xs text-muted-foreground">
           © {new Date().getFullYear()}{" "}
           <span className="font-semibold text-foreground">
-            Ana Communications
+            Ana Communication
           </span>
           . All rights reserved.
         </p>

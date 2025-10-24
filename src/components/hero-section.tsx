@@ -104,7 +104,7 @@ export default function HeroSection() {
                       href="#link"
                       className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                     >
-                      <span className="text-foreground text-sm">
+                      <span className="text-foreground text-xs">
                         Meet the Future of Customer Support
                       </span>
                       <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
@@ -127,7 +127,7 @@ export default function HeroSection() {
                   preset="fade-in-blur"
                   speedSegment={0.3}
                   as="h1"
-                  className="mx-auto mt-8 max-w-4xl text-balance text-5xl max-md:font-semibold md:text-5xl lg:mt-16 xl:text-[4rem]"
+                  className="mx-auto mt-8 max-w-4xl text-balance text-5xl max-md:font-semibold md:text-5xl lg:mt-16 xl:text-[3rem]"
                 >
                   Modern Telecom & IT Solutions for Better Customer Experiences
                 </TextEffect>

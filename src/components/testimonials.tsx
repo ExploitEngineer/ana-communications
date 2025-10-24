@@ -10,7 +10,7 @@ const testimonials = [
     name: "Mary Wilson",
     role: "Healthcare Client",
     avatar: "/assets/images/client-3.jpg",
-    text: "Ana Communications transformed our patient support process. Their medical billing and communication solutions made our workflow seamless and reliable.",
+    text: "Ana Communication transformed our patient support process. Their medical billing and communication solutions made our workflow seamless and reliable.",
   },
   {
     name: "Daniel Lee",

@@ -28,7 +28,7 @@ export default function AboutSection() {
             <p className="text-muted-foreground text-base leading-relaxed">
               At{" "}
               <span className="font-semibold text-primary">
-                Ana Communications
+                Ana Communication
               </span>
               , we bridge the gap between people and technology. From customer
               engagement to medical billing, our mission is to make every

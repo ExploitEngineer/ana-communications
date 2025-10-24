@@ -23,12 +23,12 @@ export function Logo() {
     <Link
       href="/"
       aria-label="Home"
-      className="group relative flex items-center gap-3 px-3 py-1 transition-all duration-500"
+      className="group relative flex items-center gap-3 px-3 mb-3 transition-all duration-500"
     >
       <div className="relative flex items-center justify-center">
-        <div className="absolute w-5 h-5 rounded-full border border-blue-500/40 animate-ping-slow"></div>
-        <div className="absolute w-3 h-3 rounded-full border border-blue-500/70 animate-ping-slower"></div>
-        <div className="relative w-2 h-2 rounded-full bg-blue-600"></div>
+        <div className="absolute w-10 h-10 rounded-full border border-blue-500/40 animate-ping-slow"></div>
+        <div className="absolute w-6 h-6 rounded-full border border-blue-500/70 animate-ping-slower"></div>
+        <div className="relative w-4 h-4 rounded-full bg-blue-600"></div>
       </div>
 
       <h1
@@ -39,7 +39,7 @@ export function Logo() {
       >
         <span
           className={cn(
-            "bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 bg-clip-text md:text-5xl text-3xl text-transparent font-extrabold transition-all duration-500 group-hover:opacity-90",
+            "bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-600 bg-clip-text md:text-9xl text-3xl text-transparent font-extrabold transition-all duration-500 group-hover:opacity-90",
           )}
         >
           ANA
@@ -47,7 +47,7 @@ export function Logo() {
 
         <span
           className={cn(
-            "ml-2 md:text-[0.99rem] text-[0.9rem] font-medium tracking-widest text-muted-foreground transition-all duration-500 group-hover:text-blue-600",
+            "ml-2 md:text-[1.99rem] text-[0.9rem] font-medium tracking-widest text-muted-foreground transition-all duration-500 group-hover:text-blue-600",
           )}
         >
           Communication
